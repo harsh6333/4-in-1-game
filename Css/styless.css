@@ -4,17 +4,16 @@ body {
 }
 
 #level-title {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin:  5%;
-  color: #FEF2BF;
+  margin: 5%;
+  color: #fef2bf;
 }
 
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -51,12 +50,50 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
-.exit{
+.exit {
   width: 15vw;
   height: 5vh;
   margin-top: 5vh;
 }
 
-a{
+a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 1130px) {
+  #level-title {
+    font-size: 2rem;
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #level-title {
+    font-size: 2rem;
+  }
+  .container {
+    width: 100%;
+  }
+  .btn {
+    margin: 20px;
+
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+  .btn {
+    margin: 15px;
+    height: 60px;
+    width: 60px;
+  }
+  #level-title {
+    font-size: 2rem;
+  }
 }

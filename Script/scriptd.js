@@ -15,6 +15,7 @@ let finaldraws_h4 = document.getElementById("td");
 let celeb_h3 = document.getElementById("celeb");
 let result_div = document.querySelector(".result");
 let options_div = document.querySelector(".options");
+let score = document.querySelector(".score");
 let yourchoice_div = document.querySelector(".move");
 let UserScore = 0;
 let ComputerScore = 0;
@@ -52,6 +53,7 @@ function game() {
   //Gameover
   function gameover() {
     result_div.classList.remove("hidden");
+    score.classList.add("hidden");
     finalcomputerscore_h4.innerHTML = "Final Computer Score: " + ComputerScore;
     finalplayerscores_h4.innerHTML = "Final Player Score: " + UserScore;
     finaldraws_h4.innerHTML =

@@ -40,4 +40,49 @@ a{
     margin-top: 2vh;
 }
 
+@media screen and (max-width: 480px)
+{  
+    #grid{
+        display: flex;
+        width: 300px;
+        height: 225px;
+        flex-wrap: wrap;
+    }
+    .restart{
+        width: 25vw;
+        height: 5vh;
+        margin-top: 25vh;
+    }
+    .exit{
+        width: 25vw;
+        height: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
 
+}
+
+
+@media screen and (max-width: 350px)
+{  
+    #grid{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 260px;
+        height: 195px;
+        flex-wrap: wrap;
+    }
+    .restart{
+        width: 25vw;
+        height: 5vh;
+        margin-top: 50vh;
+    }
+    .exit{
+        width: 25vw;
+        height: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+}

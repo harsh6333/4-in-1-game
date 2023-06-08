@@ -1,57 +1,136 @@
 /* styles.css */
 /* universal selector - Applies to whole document */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: rgb(61, 26, 26);
-    color: #fff;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(61, 26, 26);
+  color: #fff;
 }
 /* To center everything in game */
-.game{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+.game {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
 }
-  
+
 /* Title of the game */
-.title{
-    position: absolute;
-    top: 0;
-    font-size: 4rem;
-    z-index: 2;
+.title {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  z-index: 2;
 }
-  
+
 /* Score Board */
-.score{
-    display: flex;
-    width: 30vw;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 70px;
-    z-index: 1;
+.score {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
 }
-  
+
 /* Score  */
-.p-count,.c-count{
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+.p-count,
+.c-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
-  
+
 /* displaying three buttons in one line */
-.options{
-    display: flex;
-    width: 50vw;
-    justify-content: space-evenly;
-    margin-top: 2rem;
+.options {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
 }
-  
+
 /* Styling on all three buttons */
-.one, .two, .three,.four,.five,.six{
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  padding: 0.8rem;
+  width: 100px;
+  border-radius: 10px;
+  background: rgb(96, 33, 177);
+  outline: none;
+  border-color: green;
+  border: none;
+  cursor: pointer;
+}
+
+.move {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Reload button style */
+.reload {
+  display: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: green;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+.hidden {
+  display: none;
+}
+
+.exit {
+  width: 15vw;
+  height: 5vh;
+  margin-top: 5vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .options {
+    padding-top: 3rem;
+    display: grid;
+    justify-content: center;
+    grid-template: 150px / auto auto auto;
+    grid-gap: 20px;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
     padding: 0.8rem;
     width: 100px;
     border-radius: 10px;
@@ -60,54 +139,67 @@
     border-color: green;
     border: none;
     cursor: pointer;
+  }
+
+  .move {
+    padding-top: 3rem;
+  }
+  .score .playerScore {
+    margin-right: 50px;
+    padding-right: 50px;
+  }
 }
-  
-.move{
-    font-size: 2rem;
-    font-weight: bold;
+
+@media screen and (max-width: 620px) {
+  .options {
+    justify-content: center;
+    grid-gap: 10px;
+    padding-top: 10rem;
+  }
+  .move {
+    padding-top: 1rem;
+  }
+  .score {
+    position: absolute;
+    top: 250px;
+    width: 70vw;
+  }
 }
-  
-/* Reload button style */
-.reload {
-    display: none;
-    margin-top: 2rem;
-    padding: 1rem;
-    background: green;
-    outline: none;
-    border: none;
+
+@media screen and (max-width: 400px) {
+  .options {
+    padding-top: 10rem;
+    grid-template: 50px / auto auto auto;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five,
+  .six {
+    padding: 0.5rem;
+    width: 50px;
     border-radius: 10px;
+    background: rgb(96, 33, 177);
+    outline: none;
+    border-color: green;
+    border: none;
     cursor: pointer;
-}
-.result{
-    margin-top: 20px;
-    font-size: 1.2rem;
-}
-.hidden{
-    display: none;
-}
-
-.exit{
-    width: 15vw;
-    height: 5vh;
-    margin-top: 5vh;
-}
-
-a{
-    text-decoration: none;
-}
-  
-/* Responsive Design */
-@media screen and (max-width: 612px)
-{  
-    .title{
-        text-align: center;
-    }
-    .score{
-        position: absolute;
-        top: 200px;
-        width: 100vw;
-    }
-    .options{
-        width: 100vw;
-    }
+  }
+  .score {
+    position: absolute;
+    top: 300px;
+    width: 30vw;
+  }
+  .score .playerScore {
+    margin-right: 20px;
+    padding-right: 20px;
+  }
+  .result {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .exit {
+    width: 30vw;
+  }
 }
