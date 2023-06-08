@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(97, 74, 190);
+}
+
+body{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+h1,h2,div{
+    margin-top: 2vh;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+a{
+    display: flex;
+    text-decoration: none;
+    height: 5vh;
+    width: 30vw;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}

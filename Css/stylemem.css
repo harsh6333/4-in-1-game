@@ -1,0 +1,43 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(61, 26, 26);
+    color: #fff;
+}
+
+body{
+    display: flex;
+    margin-top: 10vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+#grid{
+    display: flex;
+    width: 400px;
+    height: 300px;
+    flex-wrap: wrap;
+}
+
+
+.exit{
+    width: 15vw;
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.restart{
+    width: 15vw;
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+
